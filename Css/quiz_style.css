@@ -1,10 +1,15 @@
 .quiz-page-container {
-    max-width: 800px;
-    width: 100%;
-    margin-top: 80px; /* Espacio para el navbar fijo */
+    max-width: 800px;       
+    width: 90%;             
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+  
+
+    margin-top: 120px;      
     margin-bottom: 50px;
 }
-
 .pregunta-block {
     text-align: left;
     margin-bottom: 30px;

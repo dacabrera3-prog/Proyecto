@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MundoCODE - Cursos</title>
+    <title>MundoCODE - Aprende a Programar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../Css/style.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <header style="text-align: center; margin-bottom: 50px;">
-            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Mundo<span style="color: var(--primary-color);">CODE.</span></h1>
-            <p>Selecciona un tema para comenzar tu aprendizaje</p>
-        </header>
 
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Mundo<span style="color: var(--primary-color);">CODE.</span></a>
+        
+        <div class="nav-menu">
+            <a href="#cursos" class="nav-link">Cursos</a>
+            <a href="#" class="nav-link">Comunidad</a>
+            
+            <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 10px;"></div>
+
+            <a href="login.html" class="btn-nav btn-login">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-nav btn-register">Registrarse</a>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1 class="hero-title">Domina el código.<br>Crea el futuro.</h1>
+        <p class="hero-subtitle">
+            Plataforma interactiva para aprender desarrollo web desde cero. 
+            HTML, CSS y JavaScript explicados de forma sencilla y práctica.
+        </p>
+        <a href="#cursos" class="btn-primary" style="display: inline-block; width: auto; padding: 12px 40px;">EXPLORAR CURSOS</a>
+    </header>
+
+    <div class="dashboard-container" id="cursos">
         <div class="grid-temas">
             <div class="tema-card">
                 <div>
                     <i class="fab fa-html5" style="font-size: 3rem; color: #e34c26; margin-bottom: 15px;"></i>
-                    <h3>HTML</h3>
+                    <h3>HTML5</h3>
                     <p style="color: var(--text-gray);">Aprende la estructura básica de la web. Etiquetas, formularios y semántica.</p>
                 </div>
                 <a href="temas/html_intro.html" class="btn-tema">INICIAR CURSO</a>
@@ -27,7 +46,7 @@
             <div class="tema-card">
                 <div>
                     <i class="fab fa-css3-alt" style="font-size: 3rem; color: #264de4; margin-bottom: 15px;"></i>
-                    <h3>CSS</h3>
+                    <h3>CSS3</h3>
                     <p style="color: var(--text-gray);">Dale estilo a tus páginas. Flexbox, Grid y diseños responsivos.</p>
                 </div>
                 <a href="temas/css_intro.html" class="btn-tema">INICIAR CURSO</a>
@@ -42,10 +61,11 @@
                 <a href="#" class="btn-tema">PRÓXIMAMENTE</a>
             </div>
         </div>
-        
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="inicio.html" style="color: var(--text-gray); text-decoration: none;">Cerrar Sesión</a>
-        </div>
     </div>
+
+    <footer style="text-align: center; padding: 40px; color: var(--text-gray); font-size: 0.9rem; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p>&copy; 2026 MundoCODE. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
